@@ -25,7 +25,7 @@ namespace Lab3
                     {
                 Console.WriteLine("Hey " + name + ", the number " + userInput + " is even and less than 25.");
                     }
-            else if ((userInput % 2 == 0) && (userInput > 25) && (userInput < 60))
+            else if ((userInput % 2 == 0) && (userInput > 25) && (userInput <= 60))
              {
                 Console.WriteLine("Hey " + name + ", the number " + userInput + " is even.");
              }
