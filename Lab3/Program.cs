@@ -17,7 +17,7 @@ namespace Lab3
 
             Console.WriteLine("Thank you, " + name + ". You entered " + userInput);
 
-            if (userInput % 2 != 0)
+            if ((userInput % 2 != 0) && (userInput < 101))
             {
                 Console.WriteLine("Hey " + name + ", the number " + userInput + " is odd.");
             }
@@ -29,7 +29,7 @@ namespace Lab3
              {
                 Console.WriteLine("Hey " + name + ", the number " + userInput + " is even.");
              }
-            else if ((userInput % 2 == 0) && (userInput > 60) && (userInput <101))
+            else if ((userInput % 2 == 0) && (userInput > 60) && (userInput < 101))
             {
                 Console.WriteLine("Hey " + name + ", the number " + userInput + " is even");
             }
@@ -39,7 +39,7 @@ namespace Lab3
             }
             else
             {
-                Console.WriteLine("Hey " + name + ", the number " + userInput + "is not between 1 and 100.");
+                Console.WriteLine("Hey " + name + ", the number " + userInput + " is not between 1 and 100.");
             }
 
             Console.WriteLine("Thank you, " + name + ", press any key to exit.");
